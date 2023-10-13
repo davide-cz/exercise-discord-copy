@@ -20,16 +20,23 @@ img {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
 }
+body {
+  margin: auto;
+}
 
 .row-container {
   display: flex;
   flex-direction: row;
-  align-content: center;
-  justify-content: space-between;
-  gap: 5rem;
-  width: 1260px;
-  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+  height: 680px;
+  max-width: 1260px;
+  margin: auto 5%;
 }
+.row-container > img {
+  max-height: 440px;
+}
+
 h2 {
   font-size: 2.5rem;
   font-weight: 900;
@@ -45,6 +52,10 @@ h2 {
   max-height: 440px;
   margin: auto;
 }
-.text-cell {
-  max-width: 380px;
+
+main > article > section:nth-child(2) {
+  background-color: rgb(229, 191, 144);
+}
+main > article > section:nth-child(2) > div {
+  flex-direction: row-reverse;
 }
