@@ -133,3 +133,43 @@ main > article > section:nth-child(2) > div {
 .download > img {
   /*Rendere bianco */
 }
+
+/*Sezione footer */
+.footer {
+  background-color: #23272a;
+  max-width: 100%;
+}
+/*
+.ext-link {
+  justify-items: start;
+}
+.int-link {
+  display: flex;
+  justify-content: space-evenly;
+}
+.int-link > * {
+  display: flex;
+  flex-direction: column;
+}
+*/
+.link {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+.social-logos {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+}
