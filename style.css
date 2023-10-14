@@ -24,6 +24,12 @@ body {
   margin: auto;
 }
 
+/*Blocco centrale  */
+
+main > article > section {
+  display: flex;
+  justify-content: center;
+}
 .row-container {
   display: flex;
   flex-direction: row;
@@ -32,6 +38,7 @@ body {
   height: 680px;
   max-width: 1260px;
   margin: auto 5%;
+  gap: 8rem;
 }
 .row-container > img {
   max-height: 440px;
@@ -54,8 +61,75 @@ h2 {
 }
 
 main > article > section:nth-child(2) {
-  background-color: rgb(229, 191, 144);
+  background-color: #f6f6f6;
 }
 main > article > section:nth-child(2) > div {
   flex-direction: row-reverse;
+}
+.text-cell {
+  width: 380px;
+}
+
+/*Main footer*/
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+.column-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 980px;
+  text-align: center;
+}
+
+.main-footer > div > h1 {
+  font-size: clamp(20px, 4vw, 40px);
+  font-weight: 900;
+  padding: 1rem;
+}
+.main-footer > div > p {
+  font-size: (20px);
+  line-height: 1.625em;
+}
+.main-footer > img {
+  width: 1180px;
+  height: auto;
+}
+
+.join {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.join > h2 {
+  color: black;
+  font-size: 28px;
+  padding: 2rem 1rem 0 1rem;
+  background-image: url(img/stars.svg);
+  background-size: contain;
+  background-position: bottom-left;
+}
+.download {
+  display: flex;
+  gap: 1rem;
+  background-color: #5865f2;
+  padding: 16px;
+  border-radius: 32px;
+  border: transparent;
+  color: aliceblue;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.download:hover {
+  background-color: hsl(235, 86%, 70%);
+}
+.download > img {
+  /*Rendere bianco */
 }
