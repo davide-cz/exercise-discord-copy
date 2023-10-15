@@ -23,7 +23,35 @@ img {
 body {
   margin: auto;
 }
-
+a {
+  text-decoration: none;
+  color: hsl(140, 13%, 87%);
+}
+a:hover {
+  text-decoration: underline;
+}
+/*Navbar*/
+.navbar {
+  background-color: #5865f2;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2.5rem;
+}
+.nav-link {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2.2rem;
+}
+.nav-link > a {
+  font-weight: 500;
+}
+.btn-nav {
+  background-color: #f6f6f6;
+  border: transparent;
+  border-radius: 2em;
+  padding: auto;
+  width: 4rem;
+}
 /*Blocco centrale  */
 
 main > article > section {
@@ -192,10 +220,7 @@ main > article > section:nth-child(2) > div {
   font-size: 16px;
   font-weight: 400px;
 }
-.link > div > a {
-  text-decoration: none;
-  color: hsl(140, 13%, 87%);
-}
+
 .language {
   display: flex;
   flex-direction: column;
