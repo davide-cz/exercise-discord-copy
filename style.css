@@ -30,12 +30,73 @@ a {
 a:hover {
   text-decoration: underline;
 }
+/*Header*/
+header {
+  background-color: hsl(235, 83%, 59%);
+  height: 100%;
+  position: relative;
+}
+.bkg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.jumbotron {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding-top: 6rem;
+  flex-direction: column;
+}
+.jumbotron > h1 {
+  font-size: 52px;
+  font-weight: 800;
+  width: 75%;
+  text-align: center;
+  color: #f6f6f6;
+}
+.jumbotron > p {
+  text-align: center;
+  width: 75%;
+  padding-top: 2rem;
+  line-height: 2rem;
+  color: #f6f6f6;
+}
+.jumbo-button {
+  display: flex;
+  gap: 1rem;
+  padding: 16px 28px;
+  border-radius: 32px;
+  border: transparent;
+  color: aliceblue;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 2rem auto 5rem;
+}
+.jumbo-button:first-child {
+  background-color: #f6f6f6;
+  color: #23272a;
+}
+.jumbo-button:last-child {
+  background-color: #23272a;
+  color: #f6f6f6;
+}
+.j-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
 /*Navbar*/
+
 .navbar {
-  background-color: #5865f2;
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 2.5rem;
+  width: 95%;
+  margin: auto;
 }
 .nav-link {
   display: flex;
@@ -52,6 +113,11 @@ a:hover {
   padding: auto;
   width: 4rem;
 }
+.btn-nav:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 75%);
+}
+
 /*Blocco centrale  */
 
 main > article > section {
